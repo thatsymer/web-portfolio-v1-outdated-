@@ -347,7 +347,6 @@ s .button__light {
 .about__description {
   margin-bottom: var(--mb-4);
   margin-top: var(--mb-4);
-  margin-left: 100px;
   color: hsl(250, 70%, 96%);
   text-align: justify;
   font-size: var(--h3-font-size);
