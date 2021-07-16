@@ -12,17 +12,29 @@
 
         <title>Personal Portfolio | Symer</title>
     </head>
-    <body>
+    <body class="area">
+        <!-- animation squares -->
+        <ul class="circles">
+            <li class="floatsq"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
         <!--===== HEADER =====-->
-        <div class="header l-header">
+        <div  class="header l-header">
             <nav class="nav bd-grid">
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
-
-                    
                 </div>
                 <div>
-                    <a href="#" class="nav__logo">Symer</a>
+                    <a href="#" class="nav__logo"><i class='bx bxs-arrow-to-top'></i></a>
                     <!-- Dark Light Theme Button -->
                 <div class="nav__theme bx bx-moon change-theme" id="theme-button">
                     
@@ -48,75 +60,44 @@
 
         <main class="l-main">
             <!--===== HOME =====-->
-            <section class="home" id="home">
+             <section class="home" id="home">
                 <div class="home__container bd-grid">
-                    <div class="home__data">
+                    <div class="home__data typewriter ">
                         <div class="home__img">
                             <img src="assets/img/perfil.png" alt="">
                         </div>
 
                         <h1 class="home__title">Symer John C. Vera</h1>
-                        <span class="home___profession">Computer Engineer</span>
-                        <div class="home__social">
-                            <a href="" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
-                            <a href="https://www.facebook.com/symre.1998" class="home__social-link"><i class='bx bxl-facebook'></i></a>
-                            <a href="https://www.instagram.com/notsymre/" class="home__social-link"><i class='bx bxl-instagram'></i></a>
-                            <a href="https://gitlab.com/thatsymer" class="home__social-link"><i class='bx bxl-gitlab'></i></a>
+                        <span class="home___profession">Front-End Developer</span>
+                        <!-- <div class="home__social">
+                            <a target="_blank" href="http://discordapp.com/users/notsymer#1021/" class="home__social-link"><i class='bx bxl-discord' ></i></a>
+                            <a target="_blank" href="https://www.facebook.com/symre.1998" class="home__social-link"><i class='bx bxl-facebook'></i></a>
+                            <a target="_blank" href="https://www.instagram.com/notsymre/" class="home__social-link"><i class='bx bxl-instagram'></i></a>
+                            <a target="_blank" href="https://github.com/thatsymer" class="home__social-link"><i class='bx bxl-github'></i></a>
                         </div>
                     
-                        <a download="" href="#" class="button home__button">Download Resume</a>
+                        <a download="Resume_Vera, Symer John" href="/Vera_Resume.docx" class="button home__button">Download Resume</a> -->
                     
                     </div>
                 </div>
+                
             </section>
 
             <!--===== ABOUT =====-->
             <section class="about__section" id="about">
                 <h2 class="section-title">About Me</h2>
+                   
                 <div class="about__container bd-grid">
                     <div class="about__data">
-                        <p class="about__description">Hello im a Computer Engineer from Western Institute of Technology. I'm currently spending my time learning web developement.</p>
-                        <img src="assets/img/about.jpg" alt="" class="about__img">
+                        <p class="about__description">
+                            I am a fresh Computer Engineering Graduate that has a keen interest in coding, anime, cats, building things, and learning new stuff on the web. Currently busying myself doing side projects to build up my web portfolio. When I’m not working, I’m either: Playing games, reading light novels/manga, or getting stuff done and doing things.
+                        </p>
+                        
                     </div>
                 <div>
-                    <div class="about__information">
-                        <h3 class="about__information-title">Information</h3>
-
-                        <div class="about_information-data">
-                            <i class='bx bxs-user about__inforamtion-icon'></i>
-                            <span>Symer John C. Vera</span>
-                        </div>
-                        
-                         <div class="about_information-data">
-                            <i class='bx bxs-phone about__inforamtion-icon'></i>
-                            <span>+639072341112</span>
-                        </div>
-
-                        <div class="about_information-data">
-                            <i class='bx bxs-envelope about__inforamtion-icon'></i>
-                            <span>thatsymer@gmail.com</span>
-                        </div>
-                    </div>
- 
-                    <div class="about__information">
-                        <h3 class="about__information-title">Experience and Certificates</h3>
-
-                        <div class="about_information-data">
-                            <i class='bx bxs-medal about__inforamtion-icon'></i>
-                            <div>
-                                <span class="about__information-subtitle">3 Projects</span>
-                                <span class="about__information-subtitle-small">Completed</span>
-                            </div>
-                        </div>
-
-                        <div class="about_information-data">
-                            <i class='bx bxs-certification about__inforamtion-icon'></i>
-                            <div>
-                                <span class="about__information-subtitle">20+ Certificates</span>
-                                <span class="about__information-subtitle-small">From Webinars and Coding Bootcamps</span>
-                            </div>
-                        </div>
-                    </div>
+                     <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="" class="about__img">
+                    </div> 
                 </div>
                       
                 </div>
@@ -127,7 +108,6 @@
             <section class="skills section" id="skills">
                 
                 <h2 class="section-title">Skills</h2>
-                <span class="section-subtitle">Here are some of my familiarity and experience in several programming languages and tools.</span>
 
                 <div class="skills__container bd-grid">
                     <div class="skills__content">
@@ -142,19 +122,25 @@
 
                         <div class="skills__data">
                             <span class="skills__name"><i class='bx bxl-javascript skill__icons' ></i>Javascript</span>
-                            <span class="skills__number">10%</span>
+                            <span class="skills__number">30%</span>
                             <span class="skills__bar skills__js"></span>
                         </div>
 
                         <div class="skills__data">
-                            <span class="skills__name "><i class='icons8-java skill__icons' ></i>Java</span>
+                            <span class="skills__name "><i class='bx bxl-javascript skill__icons' ></i>Java</span>
                             <span class="skills__number">40%</span>
                             <span class="skills__bar skills__java"></span>
                         </div>
 
                         <div class="skills__data">
+                            <span class="skills__name "><i class='bx bxl-react skill__icons' ></i>ReactJS</span>
+                            <span class="skills__number">40%</span>
+                            <span class="skills__bar skills__reactjs"></span>
+                        </div>
+
+                        <div class="skills__data">
                             <span class="skills__name"><i class='bx bxl-c-plus-plus skill__icons' ></i>C/C++</span>
-                            <span class="skills__number">60%</span>
+                            <span class="skills__number">50%</span>
                             <span class="skills__bar skills__c"></span>
                         </div>
 
@@ -163,24 +149,13 @@
                             <span class="skills__number">40%</span>
                             <span class="skills__bar skills__python"></span>
                         </div>
-                        
+
                         <div class="skills__data">
                             <span class="skills__name"><i class='bx bx-data skill__icons' ></i>MySQL</span>
-                            <span class="skills__number">30%</span>
+                            <span class="skills__number">10%</span>
                             <span class="skills__bar skills__mysql"></span>
                         </div>
 
-                        <div class="skills__data">
-                            <span class="skills__name"><i class='bx bx-square skill__icons' ></i>VHDL</span>
-                            <span class="skills__number">40%</span>
-                            <span class="skills__bar skills__vhdl"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name"><i class='bx bx-square skill__icons' ></i>Assembly</span>
-                            <span class="skills__number">40%</span>
-                            <span class="skills__bar skills__assembly"></span>
-                        </div>
                     </div>
                
 
@@ -194,12 +169,6 @@
                                 <span class="skills__bar skills__arduino"></span>
                             </div>
     
-                            <div class="skills__data">
-                                <span class="skills__name"><i class='bx bx-microchip skill__icons'></i>VHDL FPGA Board</span>
-                                <span class="skills__number">40%</span>
-                                <span class="skills__bar skills__fpga"></span>
-                            </div>
-
                             <div class="skills__data">
                                 <span class="skills__name"><i class='bx bxs-file-doc skill__icons'></i>WORD/EXCEL</span>
                                 <span class="skills__number">70%</span>
@@ -220,9 +189,7 @@
 
             <!--===== EDUCATION =====-->
             <section class="education section">
-                <span class="section-subtitle">
-                    Qualification
-                </span>
+
                 <h2 class="section-title">My Education</h2>
 
                 <div class="education__container">
@@ -294,14 +261,13 @@
 
             <!--===== WORKS =====-->
             <section class="works section" id="works">
-                <span class="section-subtitle">My portfolio</span>
                 <h2 class="section-title">Recent Works</h2>
 
                 <div class="works__container bd-grid">
                     <div class="works__img">
                         <img src="assets/img/work1.jpg" alt="">
                         <div class="works__data">
-                            <a href="https://gitlab.com/thatsymer/disinfection-device-for-n95-mask.git" class="works__link"><i class='bx bx-link'></i></a>
+                            <a target="_blank" href="https://gitlab.com/thatsymer/disinfection-device-for-n95-mask.git" class="works__link"><i class='bx bx-link'></i></a>
                             <span class="works__title">Disinfection Device for N95 Mask using Arduino with Custom Bootloader</span>
                         </div>
                     </div>
@@ -310,7 +276,7 @@
                         <div class="works__img">
                             <img src="assets/img/work2.jpg" alt="">
                             <div class="works__data">
-                                <a href="" class="works__link"><i class='bx bx-link'></i></a>
+                                <a target="_blank" href="" class="works__link"><i class='bx bx-link'></i></a>
                                 <span class="works__title">Web Profile</span>
                             </div>
                         </div>
@@ -319,18 +285,20 @@
                             <div class="works__img">
                                 <img src="assets/img/work3.jpeg" alt="">
                                 <div class="works__data">
-                                    <a href="https://thatsymer.gitlab.io/log-in-page" class="works__link"><i class='bx bx-link'></i></a>
-                                    <span class="works__title">Log-in Page</span>
+                                    <a target="_blank" href="https://meme-random-generator.netlify.app/" class="works__link"><i class='bx bx-link'></i></a>
+                                    <span class="works__title">Meme Generator</span>
                                 </div>
                             </div>
+
+
 
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <span class="section-subtitle">Contact Me</span>
-                <h2 class="section-title">Get in Touch</h2>
+
+                <h2 class="section-title">Contact Me</h2>
 
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form">
@@ -365,15 +333,14 @@
                 <p class="footer__description">Hello this is my personal website, thanks for droppin by!</p>
 
                 <div class="footer__social">
-                    <a href="https://www.facebook.com/symre.1998" class="footer__link"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://www.instagram.com/notsymre/" class="footer__link"><i class='bx bxl-instagram' ></i></a>
-                    <a href="http://discordapp.com/users/notsymer#1021/" class="footer__link"><i class='bx bxl-discord' ></i></a>
-                </div>
-               
-
+                        <a target="_blank" href="http://discordapp.com/users/notsymer#1021/" class="footer__link"><i class='bx bxl-discord' ></i></a>
+                        <a target="_blank" href="https://www.facebook.com/symre.1998" class="footer__link"><i class='bx bxl-facebook'></i></a>
+                        <a target="_blank" href="https://www.instagram.com/notsymre/" class="footer__link"><i class='bx bxl-instagram'></i></a>
+                        <a target="_blank" href="https://github.com/thatsymer" class="footer__link"><i class='bx bxl-github'></i></a>
             </div>
         </footer>
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        
     </body>
 </html>
